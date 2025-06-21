@@ -1,0 +1,258 @@
+body {
+  background: #22223b;
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #4a4e69;
+  padding: 1em 0;
+  text-align: center;
+}
+nav a {
+  color: #00fff7;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+nav a:hover {
+  color: #ff3b3b;
+  text-shadow: 0 0 8px #ff3b3b;
+}
+.tasks-bg {
+  background: url('https://cdna.artstation.com/p/assets/images/images/031/858/166/large/fabien-todeschini-amongus-final.jpg?1604803788') center/cover no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  background: #22223b;
+  color: #bfc0c0;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 0.9em;
+}
+button.complete-task {
+  background: #00fff7;
+  color: #22223b;
+  border: none;
+  padding: 0.7em 2em;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+button.complete-task:hover {
+  background: #ff3b3b;
+  color: #fff;
+  box-shadow: 0 0 12px #ff3b3b;
+}
+.security-cam {
+  background: #1a1a2e;
+  border: 2px solid #00fff7;
+  border-radius: 12px;
+  padding: 2em;
+  margin: 2em auto;
+  width: 60%;
+  box-shadow: 0 0 20px #00fff744;
+  position: relative;
+  overflow: hidden;
+}
+.cam-flicker {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(0deg, #fff1 0 2px, transparent 2px 8px);
+  opacity: 0.2;
+  animation: flicker 0.2s infinite;
+  pointer-events: none;
+}
+@keyframes flicker {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.4; }
+  100% { opacity: 0.2; }
+}
+mark {
+  background: #ff3b3b;
+  color: #fff;
+  padding: 0 0.3em;
+  border-radius: 4px;
+}
+code {
+  background: #22223b;
+  color: #00fff7;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+body {
+  background: #22223b;
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: #4a4e69;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 4px solid #00fff7;
+  box-shadow: 0 2px 12px #00fff733;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0 4em 0;
+}
+section {
+  background: #23234b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0006;
+  margin: 1.5em 0;
+  padding: 2em 2.5em;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  border: 2px solid #00fff7;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+section:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px #00fff799;
+}
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.2em;
+  letter-spacing: 2px;
+  color: #00fff7;
+  text-shadow: 0 0 12px #00fff7, 0 2px 0 #22223b;
+}
+h2 {
+  color: #ff3b3b;
+  margin-bottom: 0.7em;
+  text-shadow: 0 0 8px #ff3b3b99;
+}
+p, ul, li, a, code, mark {
+  font-size: 1.1em;
+}
+nav {
+  margin-top: 0.5em;
+}
+nav a {
+  color: #00fff7;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s, text-shadow 0.2s;
+  padding: 0.3em 1.2em;
+  border-radius: 8px;
+  background: #23234b;
+  box-shadow: 0 2px 8px #00fff733;
+}
+nav a:hover, nav a.active, nav a:focus {
+  background: #00fff7;
+  color: #22223b;
+  outline: none;
+  text-shadow: 0 0 8px #ff3b3b;
+}
+footer {
+  background: #22223b;
+  color: #bfc0c0;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 12px #00fff733;
+}
+button.complete-task {
+  background: #00fff7;
+  color: #22223b;
+  border: none;
+  padding: 0.7em 2em;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+button.complete-task:hover {
+  background: #ff3b3b;
+  color: #fff;
+  box-shadow: 0 0 12px #ff3b3b;
+}
+.security-cam {
+  background: #1a1a2e;
+  border: 2px solid #00fff7;
+  border-radius: 12px;
+  padding: 2em;
+  margin: 2em auto;
+  width: 60%;
+  box-shadow: 0 0 20px #00fff744;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cam-flicker {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(0deg, #fff1 0 2px, transparent 2px 8px);
+  opacity: 0.2;
+  animation: flicker 0.2s infinite;
+  pointer-events: none;
+}
+@keyframes flicker {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.4; }
+  100% { opacity: 0.2; }
+}
+mark {
+  background: #ff3b3b;
+  color: #fff;
+  padding: 0 0.3em;
+  border-radius: 4px;
+}
+code {
+  background: #22223b;
+  color: #00fff7;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+@media (max-width: 600px) {
+  section {
+    padding: 1em 0.5em;
+    max-width: 98vw;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+}

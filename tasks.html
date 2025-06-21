@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crew Tasks - Among the HTMLs</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🧹 Crew Tasks</h1>
+    <nav>
+      <a href="index.html">The Skeld</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="security.html">Security Cam</a>
+    </nav>
+  </header>
+  <main class="tasks-bg">
+    <h2>Task List</h2>
+    <ul>
+      <li>Swipe Card</li>
+      <br>
+      <li>Fix Wiring</li>
+      <br>
+      <li>Empty Garbage</li>
+      <br>
+      <li>Align Engine Output</li>
+      <br>
+      <li>Submit Scan</li>
+      <br>
+      <li>Prime Shields</li>
+    </ul>
+    <button class="complete-task">Complete Task</button>
+    <p class="easter-egg" style="display:none;"><mark>You found the Impostor!</mark></p>
+  </main>
+  <footer>
+    <p>Made with ❤️ by samar | <a href="https://github.com/samar-d-coder" id="emergency">Emergency Meeting 🚨</a></p>
+  </footer>
+  <script>
+    document.querySelector('.complete-task').addEventListener('click', function() {
+      document.querySelector('.easter-egg').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

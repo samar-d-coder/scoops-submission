@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Ejected! - Among the HTMLs</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body { background: #1a1a2e; color: #fff; text-align: center; padding-top: 10vh; }
+    .eject {
+      animation: eject 2s ease-in-out infinite alternate;
+      font-size: 2em;
+      color: #ff3b3b;
+    }
+    @keyframes eject {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-40px) rotate(-10deg); }
+    }
+    a { color: #00fff7; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="eject">
+    <p>404: Not Found</p>
+    <p>You were not The One. You got <mark>ejected</mark>!</p>
+    <img src="assets/eject.png" alt="Ejected Crewmate" width="120">
+  </div>
+  <p><a href="index.html">Return to Ship</a></p>
+</body>
+</html>
